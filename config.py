@@ -76,6 +76,7 @@ with open("secrets") as f:
 
 _redis = {
     'host': 'localhost',
+    'password' : '',
     'port': 6379,
     'db': 0
 }

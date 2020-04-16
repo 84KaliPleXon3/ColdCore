@@ -88,7 +88,7 @@ def debug_app():
 @app.before_request
 def before_request():
     db.connect()
-    g.redis = redis.StrictRedis(host=config.redis.host, port=config.redis.port, db=config.redis.db)
+    g.redis = redis.StrictRedis(host=config.redis.host, port=config.redis.port, db=config.redis.db, password=config.redis.password)
     g.connected = True
 
 

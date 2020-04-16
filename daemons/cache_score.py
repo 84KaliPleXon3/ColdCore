@@ -6,7 +6,7 @@ from data.database import db
 
 
 def run():
-    r = redis.StrictRedis(host=config.redis.host, port=config.redis.port, db=config.redis.db)
+    r = redis.StrictRedis(host=config.redis.host, port=config.redis.port, db=config.redis.db, password=config.redis.password)
     db.connect()
 
     def set_complex(key, val):
