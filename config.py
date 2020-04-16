@@ -76,7 +76,7 @@ with open("secrets") as f:
 
 _redis = {
     'host': 'localhost',
-    'password' : '',
+    'password' : None, # change this to 'stringOfYourRedisPassword'
     'port': 6379,
     'db': 0
 }
